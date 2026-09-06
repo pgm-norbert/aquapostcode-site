@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AquaPostcode — Privacy Policy</title>
+<style>
+:root{color-scheme:light dark}
+body{max-width:44rem;margin:0 auto;padding:2rem 1.25rem 4rem;
+ font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+ color:#16202c;background:#fff}
+@media (prefers-color-scheme:dark){body{color:#e8eef2;background:#0b1220}
+ code{background:#182233}}
+h1{font-size:1.8rem;margin-bottom:.25rem}
+h2{font-size:1.15rem;margin-top:2rem}
+.updated{color:#5c6b73;font-size:.9rem;margin-top:0}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid rgba(128,128,128,.3);vertical-align:top}
+code{background:#f1f4f8;padding:.1rem .3rem;border-radius:3px;font-size:.9em}
+</style>
+</head>
+<body>
+<h1>AquaPostcode — Privacy Policy</h1>
+<p class="updated">Last updated 5 September 2026</p>
+
+<p>AquaPostcode shows publicly published water quality data for a UK postcode. There is no account,
+no sign-up and no email address. This policy describes exactly what leaves your device.</p>
+
+<h2>What we do not collect</h2>
+<ul>
+<li>No name, email address, phone number or account of any kind.</li>
+<li>No GPS or device location. The app never requests location permission.</li>
+<li>No advertising identifier (IDFA), and no third-party ad or tracking SDKs.</li>
+<li>We never receive your full postcode. See below.</li>
+</ul>
+
+<h2>Your postcode</h2>
+<p>When you look up a postcode, the full postcode is sent to two public services so the lookup can work:</p>
+<table>
+<tr><th>Service</th><th>Why</th></tr>
+<tr><td><a href="https://postcodes.io">postcodes.io</a></td><td>Converts the postcode to a location and administrative area.</td></tr>
+<tr><td>Environment Agency &amp; water company open data</td><td>Returns the published sampling results for that area.</td></tr>
+</table>
+<p>These are the same public data sources anyone can query directly. We do not operate a server, and
+your postcode is never stored by us.</p>
+<p>If you turn on watching for a postcode, that postcode is saved <strong>on your device only</strong>,
+so the app can re-check it. Turning watching off deletes it.</p>
+
+<h2>Analytics</h2>
+<p>We use <a href="https://posthog.com">PostHog</a> (EU region) to understand how the app is used so we
+can improve it. Analytics events deliberately exclude your full postcode. We send the
+<strong>outcode</strong> only, meaning the first part such as <code>SW1A</code>, never <code>SW1A 1AA</code>.</p>
+<table>
+<tr><th>Event</th><th>What it contains</th></tr>
+<tr><td><code>postcode_checked</code></td><td>Outcode, water company, hardness value, which readings were flagged, how many products were shown.</td></tr>
+<tr><td><code>product_clicked</code></td><td>Which product was tapped, its price and position, and the reading it was recommended for.</td></tr>
+<tr><td><code>watch_*</code></td><td>Whether you enabled watching and whether a notification was raised.</td></tr>
+</table>
+<p>PostHog also records a random anonymous identifier, your app version, and device model and operating
+system version. That identifier is not linked to any real-world identity.</p>
+
+<h2>Notifications</h2>
+<p>Notifications are optional and off unless you choose to watch a postcode. They are
+<strong>local notifications</strong>: your device periodically re-checks the published data for your saved
+postcode and raises a notification itself if new results appear. Nothing is pushed from us, we hold no
+push token, and we do not know which postcodes are being watched.</p>
+
+<h2>Affiliate links</h2>
+<p>Where a water quality reading is flagged, the app may recommend filter products. Those are affiliate
+links to Waterdrop, and we may earn a commission if you buy, at no extra cost to you. Which products
+appear is determined by your postcode's readings, not by commission. Opening a link hands you to
+Waterdrop's own site, where their privacy policy applies.</p>
+
+<h2>Children</h2>
+<p>AquaPostcode is not directed at children and collects nothing that identifies an individual.</p>
+
+<h2>Your rights</h2>
+<p>Under UK GDPR you can ask what data is held about you, and ask for it to be deleted. Because the app
+holds no account and stores no personal identifiers, we normally cannot link any record to you.
+You can clear everything the app has stored by deleting the app.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:norbert.adam85@gmail.com">norbert.adam85@gmail.com</a></p>
+
+<h2>Accuracy</h2>
+<p>AquaPostcode reports published testing data for your area. It is not a test of the water at your own
+tap, and it is not medical or safety advice.</p>
+</body>
+</html>
