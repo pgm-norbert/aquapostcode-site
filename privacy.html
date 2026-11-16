@@ -21,7 +21,7 @@ code{background:#f1f4f8;padding:.1rem .3rem;border-radius:3px;font-size:.9em}
 </head>
 <body>
 <h1>AquaPostcode — Privacy Policy</h1>
-<p class="updated">Last updated 5 September 2026</p>
+<p class="updated">Last updated 15 November 2026</p>
 
 <p>AquaPostcode shows publicly published water quality data for a UK postcode. There is no account,
 no sign-up and no email address. This policy describes exactly what leaves your device.</p>
@@ -31,7 +31,7 @@ no sign-up and no email address. This policy describes exactly what leaves your 
 <li>No name, email address, phone number or account of any kind.</li>
 <li>No GPS or device location. The app never requests location permission.</li>
 <li>No advertising identifier (IDFA), and no third-party ad or tracking SDKs.</li>
-<li>We never receive your full postcode. See below.</li>
+<li>No payment card details. Purchases are handled entirely by Apple.</li>
 </ul>
 
 <h2>Your postcode</h2>
@@ -41,10 +41,29 @@ no sign-up and no email address. This policy describes exactly what leaves your 
 <tr><td><a href="https://postcodes.io">postcodes.io</a></td><td>Converts the postcode to a location and administrative area.</td></tr>
 <tr><td>Environment Agency &amp; water company open data</td><td>Returns the published sampling results for that area.</td></tr>
 </table>
-<p>These are the same public data sources anyone can query directly. We do not operate a server, and
-your postcode is never stored by us.</p>
+<p>These are the same public data sources anyone can query directly. For ordinary lookups your postcode
+is not sent to us and is not stored by us.</p>
+<p>The <strong>Reports</strong> tab is different. When you check whether a paid report is available, or buy
+one, the postcode is sent to the AquaPostcode report service, which we operate (hosted by Render in
+Frankfurt, Germany). Checking availability does not store the postcode. Buying a report does: see
+"Paid reports" below.</p>
 <p>If you turn on watching for a postcode, that postcode is saved <strong>on your device only</strong>,
 so the app can re-check it. Turning watching off deletes it.</p>
+
+<h2>Paid reports</h2>
+<p>A report is an optional one-off In-App Purchase. Apple takes the payment; we never see your name,
+Apple ID, email address or card details. To deliver the report and let you open it again, our report
+service stores:</p>
+<ul>
+<li>the postcode the report is for;</li>
+<li>Apple's transaction identifier and signed receipt data for that purchase, which we check with Apple;</li>
+<li>the product bought, the date, and the contents of the report;</li>
+<li>a one-way hash of the private link token that opens your report.</li>
+</ul>
+<p>The app keeps the list of your reports and their private links on your device. Anyone you give a report
+link to can open that report. Our hosting provider keeps short-lived technical logs of requests, which
+include IP addresses, for security and troubleshooting. We keep purchased reports so you can re-open or
+restore them; to have one deleted, email us with the report ID printed on the report.</p>
 
 <h2>Analytics</h2>
 <p>We use <a href="https://posthog.com">PostHog</a> (EU region) to understand how the app is used so we
@@ -54,6 +73,7 @@ can improve it. Analytics events deliberately exclude your full postcode. We sen
 <tr><th>Event</th><th>What it contains</th></tr>
 <tr><td><code>postcode_checked</code></td><td>Outcode, water company, hardness value, which readings were flagged, how many products were shown.</td></tr>
 <tr><td><code>product_clicked</code></td><td>Which product was tapped, its price and position, and the reading it was recommended for.</td></tr>
+<tr><td><code>report_purchased</code></td><td>Which report product was bought. No postcode.</td></tr>
 <tr><td><code>watch_*</code></td><td>Whether you enabled watching and whether a notification was raised.</td></tr>
 </table>
 <p>PostHog also records a random anonymous identifier, your app version, and device model and operating
@@ -66,18 +86,18 @@ postcode and raises a notification itself if new results appear. Nothing is push
 push token, and we do not know which postcodes are being watched.</p>
 
 <h2>Affiliate links</h2>
-<p>Where a water quality reading is flagged, the app may recommend filter products. Those are affiliate
-links to Waterdrop, and we may earn a commission if you buy, at no extra cost to you. Which products
-appear is determined by your postcode's readings, not by commission. Opening a link hands you to
-Waterdrop's own site, where their privacy policy applies.</p>
+<p>Where a water quality reading is flagged, the app may recommend filter products. Those are links
+to AquaTru. Where a link is an affiliate link the app says so, and we may earn a commission if you buy, at
+no extra cost to you. Which products appear is determined by your postcode's readings, not by commission.
+Opening a link hands you to AquaTru's own site, where their privacy policy applies.</p>
 
 <h2>Children</h2>
 <p>AquaPostcode is not directed at children and collects nothing that identifies an individual.</p>
 
 <h2>Your rights</h2>
-<p>Under UK GDPR you can ask what data is held about you, and ask for it to be deleted. Because the app
-holds no account and stores no personal identifiers, we normally cannot link any record to you.
-You can clear everything the app has stored by deleting the app.</p>
+<p>Under UK GDPR you can ask what data is held about you, and ask for it to be deleted. The app
+holds no account, so the only record we can link to you is a purchased report, which we can find from
+its report ID. You can clear everything the app has stored on your device by deleting the app.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:norbert.adam85@gmail.com">norbert.adam85@gmail.com</a></p>
